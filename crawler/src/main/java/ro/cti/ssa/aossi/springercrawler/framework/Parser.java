@@ -1,6 +1,10 @@
 package ro.cti.ssa.aossi.springercrawler.framework;
 
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 /**
  * @author adrian.zamfirescu
@@ -8,10 +12,8 @@ import org.w3c.dom.NodeList;
  */
 public interface Parser {
 
-    void parse();
+    NodeList getRoot(String url) throws IOException, ParserConfigurationException, SAXException;
 
-    void parseArticle();
-
-    void search(NodeList nodeList);
+    void searchDomTree(NodeList nodeList);
 
 }

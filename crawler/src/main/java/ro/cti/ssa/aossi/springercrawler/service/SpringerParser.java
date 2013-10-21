@@ -1,26 +1,40 @@
 package ro.cti.ssa.aossi.springercrawler.service;
 
+import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 import ro.cti.ssa.aossi.springercrawler.framework.Parser;
+import ro.cti.ssa.aossi.springercrawler.utils.ParserUtils;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.*;
 
 /**
  * @author adrian.zamfirescu
  * @since 10/17/13
  */
-public class SpringerParser implements Parser {
+public abstract class SpringerParser implements Parser {
 
-    public void parse() {
-        //To change body of implemented methods use File | Settings | File Templates.
+    private static final String COMMENTS_START = "[if";
+    private static final String COMMENTS_END = "[endif]";
+
+
+
+    public NodeList getRoot(String url) throws IOException, ParserConfigurationException, SAXException {
+
+        String sourceCode = ParserUtils.getUrlSource(url);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        String cleanedSourceCode = ParserUtils.removeComments(sourceCode, COMMENTS_START, COMMENTS_END);
+        cleanedSourceCode = cleanedSourceCode.replace("<!DOCTYPE html>","<html>").replace("&copy","_copy");
+        Document doc = dBuilder.parse(new InputSource(new StringReader(cleanedSourceCode)));
+
+        return doc.getChildNodes();
+
     }
 
-    public void parseArticle() {
-        //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    public void search(NodeList nodeList) {
-        //To change body of implemented methods use File | Settings | File Templates.
-        Node node = nodeList.item(0);
-
-    }
 }
