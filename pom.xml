@@ -12,6 +12,7 @@
         <module>backend</module>
         <module>frontend</module>
         <module>crawler</module>
+        <module>backend</module>
     </modules>
 
 

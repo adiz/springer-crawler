@@ -22,8 +22,6 @@ public abstract class SpringerParser implements Parser {
     private static final String COMMENTS_START = "[if";
     private static final String COMMENTS_END = "[endif]";
 
-
-
     public NodeList getRoot(String url) throws IOException, ParserConfigurationException, SAXException {
 
         String sourceCode = ParserUtils.getUrlSource(url);
