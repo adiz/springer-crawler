@@ -23,10 +23,11 @@ public class Article {
     private String copyrightHolder;
     private String bookLink;
     private List<Topic> topics;
-    private List<String> keywords;
+    private List<Data> keywords;
     private List<IndustrySector> industrySectors;
-    private List<eBookPackage> eBookPackages;
+    private List<EBookPackage> eBookPackages;
     private List<Editor> editors;
-
+    private List<Data> authorAffiliations;
+    private List<Data> editorAffiliations;
 
 }

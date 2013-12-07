@@ -4,7 +4,7 @@ package ro.cti.ssa.aossi.springercrawler.model;
  * @author adrian.zamfirescu
  * @since 12/6/2013
  */
-public class eBookPackage {
+public class EBookPackage {
 
     private String eBookPackageName;
     private String url;
