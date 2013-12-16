@@ -15,10 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f232179-6921-4412-8bc0-463b33e0e8f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Data.java" />
-      <change type="MOVED" beforePath="C:\Users\Adi\Documents\GitHub\springer-crawler\backend\src\main\java\ro\cti\ssa\aossi\springercrawler\model\eBookPackage.java" afterPath="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/EBookPackage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/AdditionalLink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParserTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Article.java" afterPath="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Article.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/crawler.iml" afterPath="$PROJECT_DIR$/crawler/crawler.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/pom.xml" afterPath="$PROJECT_DIR$/crawler/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java" afterPath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java" afterPath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java" afterPath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtils.java" afterPath="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtilsTest.java" afterPath="$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtilsTest.java" />
     </list>
     <ignored path="SpringCrawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,73 +117,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Article.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Article.java">
+      <file leaf-file-name="ArticleSpringerParser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="42" selection-start="874" selection-end="874" vertical-scroll-proportion="0.9477612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Editor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Editor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EBookPackage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/EBookPackage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndustrySector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/IndustrySector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Topic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Topic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Author.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Author.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="39" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Series.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Series.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,7 +129,34 @@
       <file leaf-file-name="Publication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Publication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="26" selection-start="2366" selection-end="2366" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticlesListSpringerParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="81" selection-start="795" selection-end="872" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringerParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="72" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,14 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java" />
-        <option value="$PROJECT_DIR$/crawler/pom.xml" />
-        <option value="$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParserTest.java" />
-        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java" />
-        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java" />
-        <option value="$PROJECT_DIR$/backend/pom.xml" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Publication.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Series.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Topic.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/IndustrySector.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/eBookPackage.java" />
@@ -221,7 +184,15 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Author.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Data.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/AuthorAffiliation.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/AdditionalLink.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Article.java" />
+        <option value="$PROJECT_DIR$/crawler/pom.xml" />
+        <option value="$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParserTest.java" />
+        <option value="$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtilsTest.java" />
+        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtils.java" />
+        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java" />
+        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java" />
+        <option value="$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java" />
       </list>
     </option>
   </component>
@@ -274,8 +245,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,6 +260,102 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="springer-crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpringCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springer-crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpringCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springer-crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpringCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springer-crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springercrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpringCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springer-crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springercrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,18 +412,12 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,50 +435,28 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ro.cti.ssa.aossi.springercrawler.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArticlesListSpringerParser">
-    <configuration default="false" name="ArticlesListSpringerParser" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.ArticleSpringerParser">
+    <configuration default="false" name="ParserUtilsTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
-          <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.service.ArticlesListSpringerParser" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="crawler" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SpringerParserTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.service.*" />
+          <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="crawler" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ro.cti.ssa.aossi.springercrawler.service" />
-      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.service.SpringerParserTest" />
+      <option name="PACKAGE_NAME" value="ro.cti.ssa.aossi.springercrawler.utils" />
+      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.utils.ParserUtilsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -432,13 +469,63 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50332" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParserUtilsTest.should_retrieve_first_child_node" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="crawler" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ro.cti.ssa.aossi.springercrawler.utils" />
+      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.utils.ParserUtilsTest" />
+      <option name="METHOD_NAME" value="should_retrieve_first_child_node" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParserUtilsTest.should_retrieve_child_node_list" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="crawler" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ro.cti.ssa.aossi.springercrawler.utils" />
+      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.utils.ParserUtilsTest" />
+      <option name="METHOD_NAME" value="should_retrieve_child_node_list" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -470,60 +557,26 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ArticlesListSpringerParserTest.should_extract_correct_articles_list" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ArticleSpringerParser" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
           <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="crawler" />
+      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.service.ArticleSpringerParser" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ro.cti.ssa.aossi.springercrawler.service" />
-      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.service.ArticlesListSpringerParserTest" />
-      <option name="METHOD_NAME" value="should_extract_correct_articles_list" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ArticlesListSpringerParserTest.should_extract_correct_article_href_from_html_node" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="ro.cti.ssa.aossi.springercrawler.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <module name="crawler" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ro.cti.ssa.aossi.springercrawler.service" />
-      <option name="MAIN_CLASS_NAME" value="ro.cti.ssa.aossi.springercrawler.service.ArticlesListSpringerParserTest" />
-      <option name="METHOD_NAME" value="should_extract_correct_article_href_from_html_node" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
       <envs />
-      <patterns />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="62095" />
+        <option name="DEBUG_PORT" value="52928" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -567,6 +620,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="" />
@@ -600,24 +671,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
       <option name="MAIN_CLASS_NAME" />
@@ -635,14 +688,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -672,12 +717,20 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ArticlesListSpringerParser" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SpringerParserTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ArticlesListSpringerParserTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ArticlesListSpringerParserTest.should_extract_correct_articles_list" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ArticlesListSpringerParserTest.should_extract_correct_article_href_from_html_node" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ParserUtilsTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParserUtilsTest.should_retrieve_first_child_node" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParserUtilsTest.should_retrieve_child_node_list" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ArticlesListSpringerParserTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ArticleSpringerParser" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -730,28 +783,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19895288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.77758914" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38879457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297953" sideWeight="0.7368421" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24108659" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13921902" sideWeight="0.9987639" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297953" sideWeight="0.7368421" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297953" sideWeight="0.860781" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995451" sideWeight="0.7368421" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25473845" sideWeight="0.7589134" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24867323" sideWeight="0.860781" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26825127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31918505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -793,93 +846,84 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java">
+    <entry file="file://$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" />
+        <state line="70" column="75" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java">
+    <entry file="file://$PROJECT_DIR$/crawler/src/test/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="10" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="48" selection-start="737" selection-end="753" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/framework/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Publication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Series.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Topic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/IndustrySector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/EBookPackage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Editor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="5" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="42" selection-start="874" selection-end="874" vertical-scroll-proportion="0.9477612">
-          <folding />
-        </state>
+        <state line="35" column="40" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/org/w3c/dom/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="0" selection-start="9641" selection-end="9641" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/AttrImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="641" column="16" selection-start="21174" selection-end="21174" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/NodeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="434" column="0" selection-start="14807" selection-end="14807" vertical-scroll-proportion="0.3324937" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/NamedNodeMapImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3058" selection-end="3058" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/AttributeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="2003" selection-end="2003" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/DeferredDocumentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="957" column="0" selection-start="34047" selection-end="34047" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/DeferredElementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="0" selection-start="3618" selection-end="3618" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xerces/internal/dom/ElementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="3495" selection-end="3495" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/ro/cti/ssa/aossi/springercrawler/model/Publication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/utils/ParserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="26" selection-start="2366" selection-end="2366" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticlesListSpringerParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="81" selection-start="795" selection-end="872" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/SpringerParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="72" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/src/main/java/ro/cti/ssa/aossi/springercrawler/service/ArticleSpringerParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>

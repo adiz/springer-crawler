@@ -1,10 +1,17 @@
 package ro.cti.ssa.aossi.springercrawler.utils;
 
+import org.fest.util.VisibleForTesting;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author adrian.zamfirescu
@@ -64,6 +71,51 @@ public class ParserUtils {
 
         return cleanTextBuilder.toString();
 
+    }
+
+    public static boolean checkExistingNode(Node node, String name, String attribute, String value){
+        String nodeName = node.getNodeName();
+        if (nodeName.equals(name) && node.hasAttributes()){
+            NamedNodeMap namedNodeMap = node.getAttributes();
+            if (namedNodeMap!=null){
+                Node classAttributeNode = namedNodeMap.getNamedItem(attribute);
+                if (classAttributeNode!=null && classAttributeNode.getNodeValue().equals(value))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    public static String getNodeTextContent(Node node){
+        return node.getTextContent();
+    }
+
+    public static Node getFirstChildNode(Node node){
+        return node.getFirstChild();
+    }
+
+    public static String getNodeAttributeValue(Node node, String attribute){
+        NamedNodeMap namedNodeMap = node.getAttributes();
+        if (namedNodeMap!=null){
+            Node classAttributeNode = namedNodeMap.getNamedItem(attribute);
+            if (classAttributeNode!=null)
+                return classAttributeNode.getNodeValue();
+        }
+        return null;
+    }
+
+    public static List<Node> getNodeChildren(Node node){
+
+        NodeList nodeList = node.getChildNodes();
+        if (nodeList!=null){
+            List<Node> children = new ArrayList<Node>();
+            for (int index=0; index<nodeList.getLength(); index++)
+                children.add(nodeList.item(index));
+
+            return children;
+        }
+
+        return null;
     }
 
 }

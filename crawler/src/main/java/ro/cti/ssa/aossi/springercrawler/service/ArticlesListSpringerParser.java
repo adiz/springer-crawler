@@ -5,11 +5,15 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import ro.cti.ssa.aossi.springercrawler.utils.ParserUtils;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static ro.cti.ssa.aossi.springercrawler.utils.ParserUtils.checkExistingNode;
+import static ro.cti.ssa.aossi.springercrawler.utils.ParserUtils.getNodeAttributeValue;
 
 /**
  * @author adrian.zamfirescu
@@ -22,6 +26,8 @@ public class ArticlesListSpringerParser extends SpringerParser{
     private static final String WHITESPACE = " ";
     private static final String SPRINGER_AUTHOR_FACET = "http://link.springer.com/search?facet-author=";
     private static final String A = "a";
+    private static final String HREF = "href";
+    private static final String CLASS = "class";
     private static final String CLASS_ATTR_VALUE = "title";
 
     public ArticlesListSpringerParser(){
@@ -70,16 +76,8 @@ public class ArticlesListSpringerParser extends SpringerParser{
     @VisibleForTesting
     String extractArticleHref(Node node){
 
-        String nodeName = node.getNodeName();
-        if (nodeName.equals(A) && node.hasAttributes()){
-            NamedNodeMap namedNodeMap = node.getAttributes();
-            Node classAttributeNode = namedNodeMap.getNamedItem("class");
-            if (classAttributeNode!=null && classAttributeNode.getNodeValue().equals(CLASS_ATTR_VALUE)){
-                Node hrefAttributeNode = namedNodeMap.getNamedItem("href");
-                if (hrefAttributeNode!=null)
-                    return hrefAttributeNode.getNodeValue();
-            }
-        }
+        if (checkExistingNode(node, A, CLASS, CLASS_ATTR_VALUE))
+            return getNodeAttributeValue(node, HREF);
 
         return null;
     }
