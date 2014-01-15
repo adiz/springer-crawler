@@ -6,16 +6,17 @@ package ro.cti.ssa.aossi.springercrawler.model;
  */
 public class Author {
 
-    private String authorName;
+    private String name;
     private String url;
+    private String mail;
     private String affiliation;
 
-    public String getAuthorName() {
-        return authorName;
+    public String getName() {
+        return name;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUrl() {
@@ -24,6 +25,14 @@ public class Author {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     public String getAffiliation() {

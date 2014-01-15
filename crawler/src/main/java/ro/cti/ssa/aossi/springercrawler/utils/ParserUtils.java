@@ -73,7 +73,18 @@ public class ParserUtils {
 
     }
 
+    public static boolean checkExistingNode(Node node, String name){
+        if (node==null)
+            return false;
+        String nodeName = node.getNodeName();
+        if (nodeName.equals(name))
+            return true;
+        return false;
+    }
+
     public static boolean checkExistingNode(Node node, String name, String attribute, String value){
+        if (node==null)
+            return false;
         String nodeName = node.getNodeName();
         if (nodeName.equals(name) && node.hasAttributes()){
             NamedNodeMap namedNodeMap = node.getAttributes();
@@ -92,6 +103,21 @@ public class ParserUtils {
 
     public static Node getFirstChildNode(Node node){
         return node.getFirstChild();
+    }
+
+    public static Node getSecondChildNode(Node node){
+
+        return node.getChildNodes().item(1);
+    }
+
+    public static Node getFourthChildNode(Node node){
+
+        return node.getChildNodes().item(3);
+    }
+
+    public static Node getSixthChildNode(Node node){
+
+        return node.getChildNodes().item(5);
     }
 
     public static String getNodeAttributeValue(Node node, String attribute){

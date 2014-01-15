@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  * @author adrian.zamfirescu
+ * @since 10/17/13
  */
 public class Article {
 
@@ -24,14 +25,14 @@ public class Article {
     private List<AdditionalLink> additionalLinks;
 
     private List<Topic> topics;
-    private List<Data> keywords;
+    private List<Keyword> keywords;
     private List<IndustrySector> industrySectors;
     private List<EBookPackage> eBookPackages;
 
     private List<Editor> editors;
-    private List<Data> editorAffiliations;
+    private List<EditorAffiliation> editorAffiliations;
     private List<Author> authors;
-    private List<Data> authorAffiliations;
+    private List<AuthorAffiliation> authorAffiliations;
 
     public String getArticleAbstract() {
         return articleAbstract;
@@ -153,11 +154,11 @@ public class Article {
         this.topics = topics;
     }
 
-    public List<Data> getKeywords() {
+    public List<Keyword> getKeywords() {
         return keywords;
     }
 
-    public void setKeywords(List<Data> keywords) {
+    public void setKeywords(List<Keyword> keywords) {
         this.keywords = keywords;
     }
 
@@ -185,11 +186,11 @@ public class Article {
         this.editors = editors;
     }
 
-    public List<Data> getEditorAffiliations() {
+    public List<EditorAffiliation> getEditorAffiliations() {
         return editorAffiliations;
     }
 
-    public void setEditorAffiliations(List<Data> editorAffiliations) {
+    public void setEditorAffiliations(List<EditorAffiliation> editorAffiliations) {
         this.editorAffiliations = editorAffiliations;
     }
 
@@ -201,11 +202,11 @@ public class Article {
         this.authors = authors;
     }
 
-    public List<Data> getAuthorAffiliations() {
+    public List<AuthorAffiliation> getAuthorAffiliations() {
         return authorAffiliations;
     }
 
-    public void setAuthorAffiliations(List<Data> authorAffiliations) {
+    public void setAuthorAffiliations(List<AuthorAffiliation> authorAffiliations) {
         this.authorAffiliations = authorAffiliations;
     }
 }
