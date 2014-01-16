@@ -1,6 +1,5 @@
 package ro.cti.ssa.aossi.springercrawler.service;
 
-import com.sun.xml.internal.fastinfoset.util.StringArray;
 import org.fest.util.VisibleForTesting;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -25,6 +24,7 @@ public class ArticleSpringerParser extends SpringerParser{
     private Article article;
 
     private static final String A = "a";
+    private static final String P = "p";
     private static final String HREF = "href";
     private static final String DD = "dd";
     private static final String ID = "id";
@@ -33,6 +33,7 @@ public class ArticleSpringerParser extends SpringerParser{
     private static final String CLASS = "class";
     private static final String TITLE = "title";
     private static final String SUP = "sup";
+    private static final String ABSTRACT = "a-plus-plus";
     private static final String ABSTRACT_TITLE = "abstract-about-title";
     private static final String ABSTRACT_PUBLICATION = "abstract-about-publication";
     private static final String ABSTRACT_PAGE_RANGE = "abstract-about-book-chapter-page-ranges";
@@ -79,11 +80,16 @@ public class ArticleSpringerParser extends SpringerParser{
     private boolean hasArticleEditorAffiliations = false;
     private boolean hasArticleAuthors = false;
     private boolean hasArticleAuthorAffiliations = false;
+    private boolean hasArticleAbstract = false;
 
     private static final String SPRINGER_BASE_URL = "http://link.springer.com";
 
     public ArticleSpringerParser(){
         article = new Article();
+    }
+
+    public Article getArticle(){
+        return article;
     }
 
     public void searchDomTree(NodeList nodeList) {
@@ -94,6 +100,14 @@ public class ArticleSpringerParser extends SpringerParser{
         for (int index=0; index<nodeList.getLength(); index++){
 
             Node node = nodeList.item(index);
+
+            if (!hasArticleAbstract){
+                String articleAbstract = getArticleAbstract(node);
+                if (articleAbstract!=null){
+                    article.setArticleAbstract(articleAbstract);
+                    hasArticleAbstract = true;
+                }
+            }
 
             if (!hasArticleTitle){
                 String articleTitle = getArticleTitle(node);
@@ -275,6 +289,14 @@ public class ArticleSpringerParser extends SpringerParser{
 
         }
 
+    }
+
+    private String getArticleAbstract(Node node){
+
+        if (checkExistingNode(node, P, CLASS, ABSTRACT))
+            return getNodeTextContent(node);
+
+        return null;
     }
 
     private String getArticleTitle(Node node) {
@@ -785,6 +807,7 @@ public class ArticleSpringerParser extends SpringerParser{
 //        String chapterRelativeURL = "/article/10.1007/s00013-011-0287-5";
         ArticleSpringerParser articleSpringerParser = new ArticleSpringerParser();
         articleSpringerParser.searchDomTree(articleSpringerParser.getRoot(SPRINGER_BASE_URL+chapterRelativeURL));
+        System.out.println("Article abstract: "+articleSpringerParser.article.getArticleAbstract());
         System.out.println("Article title: "+articleSpringerParser.article.getTitle());
         System.out.println("Article publication: "+articleSpringerParser.article.getPublication());
         System.out.println("Article page range: "+articleSpringerParser.article.getPageRange());

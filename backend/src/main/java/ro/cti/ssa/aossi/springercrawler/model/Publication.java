@@ -1,14 +1,23 @@
 package ro.cti.ssa.aossi.springercrawler.model;
 
+import ro.cti.ssa.aossi.springercrawler.basemodel.BaseModel;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * @author adrian.zamfirescu
  * @since 12/1/2013
  */
-public class Publication {
+@Entity
+@Table(name = "publication")
+public class Publication extends BaseModel {
 
     private String publicationTitle;
     private String url;
 
+    @Column(name = "publication_title")
     public String getPublicationTitle() {
         return publicationTitle;
     }
@@ -17,6 +26,7 @@ public class Publication {
         this.publicationTitle = publicationTitle;
     }
 
+    @Column(name = "url")
     public String getUrl() {
         return url;
     }

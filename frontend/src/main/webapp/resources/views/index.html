@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" ng-app="TodoApp">
+<head>
+    <meta charset="utf-8">
+    <title>Springer Crawler</title>
+    <link rel="stylesheet" href="resources/css/app.css"/>
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
+    <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>-->
+</head>
+<body>
+<div class="container">
+
+    <div class="masthead">
+        <h3 class="muted">Springer Crawler</h3>
+        <div class="navbar" ng-controller="SpringerController">
+            <div class="navbar-inner">
+                <div class="container">
+
+                    <h3>Manage, search and filter the articles on Springer.com</h3>
+
+                    <span class="label">Gather articles</span><br/>
+                    <input type="text" class="input-large" ng-model="authorName" placeholder="Type an author's full name..."/><br/>
+                    <button class="btn btn-primary" ng-click="crawlArticles(authorName)">Crawl</button>
+                    <br/>
+
+                    <div class="alert alert-success" ng-show="newResults">{{noArticles}} new articles have been stored.</div>
+                    <div class="row alert alert-error" ng-show="hasError">Crawler couldn't find any list of articles.</div>
+
+                    <br/>
+
+                    <button class="btn btn-primary" ng-click="listArticles()">Search</button>
+
+
+                    <div class="well" ng-repeat="article in articles">
+
+                        <span class="label">Article title</span><br/>
+                        <p>{{article.title}}</p>
+                        <br/>
+                        <span class="label">Article publication</span><br/>
+                        <p>{{article.publication}}</p>
+                        <span class="label">Copyright holder</span><br/>
+                        <p>{{article.copyrightHolder}}</p>
+                        <br/>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="resources/js/lib/ui-bootstrap-custom-tpls-0.6.0.min.js"></script>
+<script src="resources/js/lib/angular-sanitize.min.js"></script>
+<script src="resources/js/lib/underscore.js"></script>
+<script src="resources/js/app.js"></script>
+<script src="resources/js/services.js"></script>
+<script src="resources/js/filters.js"></script>
+<script src="resources/js/directives.js"></script>
+</body>
+</html>

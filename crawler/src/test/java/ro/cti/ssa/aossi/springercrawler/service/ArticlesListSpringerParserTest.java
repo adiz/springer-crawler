@@ -76,7 +76,7 @@ public class ArticlesListSpringerParserTest {
         articles = articlesListSpringerParser.getArticlesHrefs();
 
         // assert
-        Assertions.assertThat(articles).hasSize(16);
+        Assertions.assertThat(articles).hasSize(18);
         for (String article : articles){
             boolean validArticle = false;
             if (article.startsWith("/article/10.1007/") || article.startsWith("/chapter/10.1007/"))

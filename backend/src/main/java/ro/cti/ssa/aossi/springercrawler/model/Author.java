@@ -1,16 +1,29 @@
 package ro.cti.ssa.aossi.springercrawler.model;
 
+import ro.cti.ssa.aossi.springercrawler.basemodel.BaseModel;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+import java.util.List;
+
 /**
  * @author adrian.zamfirescu
  * @since 12/1/2013
  */
-public class Author {
+@Entity
+@Table(name = "author")
+public class Author extends BaseModel {
 
     private String name;
     private String url;
     private String mail;
     private String affiliation;
 
+    private List<Article> articles;
+
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -19,6 +32,7 @@ public class Author {
         this.name = name;
     }
 
+    @Column(name = "url")
     public String getUrl() {
         return url;
     }
@@ -27,6 +41,7 @@ public class Author {
         this.url = url;
     }
 
+    @Column(name = "mail")
     public String getMail() {
         return mail;
     }
@@ -35,11 +50,21 @@ public class Author {
         this.mail = mail;
     }
 
+    @Column(name = "affiliation")
     public String getAffiliation() {
         return affiliation;
     }
 
     public void setAffiliation(String affiliation) {
         this.affiliation = affiliation;
+    }
+
+    @ManyToMany(mappedBy = "authors")
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
     }
 }
